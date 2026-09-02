@@ -16,64 +16,6 @@
 #define EDIT    4
 
 / {
-    macros {
-        goto_workspace_3: goto_workspace_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(NUMBER_3)>;
-            label = "GOTO_WORKSPACE_3";
-        };
-
-        goto_workspace_4: goto_workspace_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(NUMBER_4)>;
-            label = "GOTO_WORKSPACE_4";
-        };
-
-        goto_workspace_5: goto_workspace_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(NUMBER_5)>;
-            label = "GOTO_WORKSPACE_5";
-        };
-
-        move_workspace_1: move_workspace_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_1))>;
-            label = "MOVE_WORKSPACE_1";
-        };
-
-        move_workspace_2: move_workspace_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_2))>;
-            label = "MOVE_WORKSPACE_2";
-        };
-
-        move_workspace_3: move_workspace_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(NUMBER_3))>;
-            label = "MOVE_WORKSPACE_3";
-        };
-
-        move_workspace_4: move_workspace_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_4))>;
-            label = "MOVE_WORKSPACE_4";
-        };
-
-        move_workspace_5: move_workspace_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LS(NUMBER_5))>;
-            label = "MOVE_WORKSPACE_5";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
