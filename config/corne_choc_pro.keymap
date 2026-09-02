@@ -13,7 +13,7 @@
 #define NAV     3
 #define EDIT    4
 
-\ {
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,6 +32,16 @@
                                     &kp LGUI &mo 1 &kp SPACE              &kp RET &mo 2 &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        sym_layer = {
+            display-name = "Symbol";
+            bindings = <
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
+                                     &trans &trans &trans               &trans &trans &trans
+            >;
         };
     };
 };
