@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define BASE    0
+#define SYMBOL  1
+#define NUM     2
+#define NAV     3
+#define EDIT    4
+
+\ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer = {
+            display-name = "Base";
+
+            // --------------------------------------------------------------------------------
+            // |  ESC |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Z  |  U   |  I  |  O  |  P  | BSPC  |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  | RET   |
+            // | SHFT |  Y  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | SHIFT |
+            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
+            bindings = <
+                &kp TAB   &kp Q &kp W &kp E &kp R &kp T &kp C_MUTE &kp C_PP &kp Z &kp U  &kp I     &kp O   &kp P    &kp BSPC
+                &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp LALT   &kp RALT &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
+                &kp LSHFT &kp Y &kp X &kp C &kp V &kp B                     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+                                    &kp LGUI &mo 1 &kp SPACE              &kp RET &mo 2 &kp RALT
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+    };
+};
