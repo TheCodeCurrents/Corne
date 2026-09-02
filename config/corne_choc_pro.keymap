@@ -78,8 +78,6 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            =
-
             display-name = "Base";
 
             // --------------------------------------------------------------------------------
@@ -99,8 +97,6 @@
         };
 
         sym_layer {
-            =
-
             display-name = "Symbol";
             bindings = <
 &trans  &kp DOT        &kp COMMA         &kp QUESTION    &kp EXCLAMATION       &kp AMPERSAND  &bt BT_SEL 0  &bt BT_CLR  &kp DOLLAR     &kp MINUS              &kp UNDERSCORE   &kp DOUBLE_QUOTES  &kt SQT           &trans
