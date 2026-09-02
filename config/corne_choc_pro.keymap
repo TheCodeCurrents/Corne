@@ -29,10 +29,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W           &kp E        &kp R               &kp T        &kp C_MUTE  &kp C_PP  &kp Z                &kp U  &kp I        &kp O            &kp P     &kp BSPC
-&kp LCTRL   &kp A  &mt LEFT_ALT S  &mt LSHFT D  &mt LEFT_CONTROL F  &kp G        &kp LALT    &kp RALT  &mt RIGHT_CONTROL H  &kp J  &mt RSHFT K  &mt RIGHT_ALT L  &kp SEMI  &kp RET
-&kp LSHFT   &kp Y  &kp X           &kp C        &kp V               &kp B                              &kp N                &kp M  &kp COMMA    &kp DOT          &kp FSLH  &kp RSHIFT
-                                   &kp LGUI     &mo 1               &lt 3 SPACE                        &lt 4 ENTER          &mo 2  &kp RALT
+&kp ESCAPE  &kp Q           &kp W           &kp E        &kp R               &kp T        &kp C_MUTE  &kp C_PP  &kp Z                &kp U  &kp I        &kp O            &kp P               &kp BSPC
+&kp TAB     &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHFT D  &mt LEFT_CONTROL F  &kp G        &kp LALT    &kp RALT  &mt RIGHT_CONTROL H  &kp J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp RET
+&kp LSHFT   &kp Y           &kp X           &kp C        &kp V               &kp B                              &kp N                &kp M  &kp COMMA    &kp DOT          &kp FSLH            &kp RSHIFT
+                                            &kp LGUI     &mo 1               &lt 3 SPACE                        &lt 4 ENTER          &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -44,7 +44,7 @@
 &trans  &kp DOT        &kp COMMA         &kp QUESTION    &kp EXCLAMATION       &kp AMPERSAND    &bt BT_SEL 0  &bt BT_CLR       &kp DOLLAR       &kp MINUS              &kp UNDERSCORE   &kp DOUBLE_QUOTES  &kt SQT           &trans
 &trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SLASH        &bt BT_SEL 1  &rgb_ug RGB_TOG  &kp BACKSLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
 &trans  &kp TILDE      &kp ASTERISK      &kp PIPE        &kp COLON             &rgb_ug RGB_BRD                                 &rgb_ug RGB_BRI  &kp SEMI               &kp CARET        &kp PLUS           &kp EQUAL         &trans
-                                         &trans          &trans                &trans                                          &trans           &trans                 &trans
+                                         &trans          &trans                &trans                                          &kp DELETE       &kp BACKSPACE          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
