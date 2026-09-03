@@ -17,59 +17,9 @@
 
 / {
     behaviors {
-        mt_a: mt_a {
+        mt: behavior_mod_tap {
             compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&kp A>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_s: mt_s {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp S>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_d: mt_d {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&kp D>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_f: mt_f {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp F>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_h: mt_h {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp RCTRL>, <&kp H>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_k: mt_k {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&kp K>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_l: mt_l {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp RALT>, <&kp L>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-        mt_semi: mt_semi {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            bindings = <&kp RGUI>, <&kp SEMI>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
         };
@@ -89,7 +39,7 @@
 
             bindings = <
 &kp ESCAPE  &kp Q           &kp W           &kp E        &kp R               &kp T        &kp C_MUTE  &kp C_PP  &kp Z                &kp U  &kp I        &kp O            &kp P               &kp BSPC
-&kp TAB     &mt_a           &mt_s           &mt_d        &mt_f               &kp G        &kp LALT    &kp RALT  &mt_h                &kp J  &mt_k        &mt_l            &mt_semi            &kp RET
+&kp TAB     &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHFT D  &mt LEFT_CONTROL F  &kp G        &kp LALT    &kp RALT  &mt RIGHT_CONTROL H  &kp J  &mt RSHFT K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI  &kp RET
 &kp LSHFT   &kp Y           &kp X           &kp C        &kp V               &kp B                              &kp N                &kp M  &kp COMMA    &kp DOT          &kp FSLH            &kp RSHIFT
                                             &kp LGUI     &mo 1               &lt 3 SPACE                        &lt 4 ENTER          &mo 2  &kp RALT
             >;
