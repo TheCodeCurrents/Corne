@@ -16,15 +16,6 @@
 #define EDIT    4
 
 / {
-    behaviors {
-        mt: behavior_mod_tap {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
