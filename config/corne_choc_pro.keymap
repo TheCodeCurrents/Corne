@@ -66,10 +66,10 @@
 
         Number {
             bindings = <
-&trans  &trans        &trans        &kp PLUS      &kp MINUS     &trans        &trans  &trans  &kp ASTERISK     &kp SLASH        &trans           &trans           &trans           &trans
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp NUMBER_0     &trans
-&trans  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &trans
-                                    &trans        &trans        &trans                        &trans           &trans           &trans
+&trans  &trans              &trans              &kp PLUS              &kp MINUS                    &trans        &trans  &trans  &kp ASTERISK     &kp SLASH                      &trans                     &trans                      &trans             &trans
+&trans  &hrm LGUI NUMBER_0  &hrm LALT NUMBER_1  &hrm LSHIFT NUMBER_2  &hrm RIGHT_CONTROL NUMBER_3  &kp NUMBER_4  &trans  &trans  &kp LEFT         &hrm RIGHT_CONTROL DOWN_ARROW  &hrm RIGHT_SHIFT UP_ARROW  &hrm RIGHT_ALT RIGHT_ARROW  &hrm RIGHT_GUI N0  &trans
+&trans  &kp NUMBER_5        &kp NUMBER_6        &kp NUMBER_7          &kp NUMBER_8                 &kp NUMBER_9                  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD                &rgb_ug RGB_BRI            &rgb_ug RGB_HUD             &rgb_ug RGB_HUI    &trans
+                                                &trans                &trans                       &trans                        &trans           &trans                         &trans
             >;
         };
 
