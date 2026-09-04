@@ -76,7 +76,7 @@
         Navigation {
             bindings = <
 &trans  &kp LG(Q)         &trans            &trans            &trans            &trans            &trans  &trans  &trans                &trans                &trans                &trans                &trans                &trans
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &trans  &trans  &kp LS(LG(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))  &kp LG(LS(NUMBER_5))  &kp LG(ENTER)
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &trans  &trans  &kp LS(LG(NUMBER_5))  &kp LS(LG(NUMBER_4))  &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_2))  &kp LG(LS(NUMBER_1))  &kp LG(ENTER)
 &trans  &trans            &trans            &trans            &trans            &trans                            &trans                &trans                &trans                &trans                &trans                &trans
                                             &trans            &trans            &trans                            &mo 5                 &trans                &trans
             >;
